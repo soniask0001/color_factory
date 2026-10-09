@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Color Factory</title>
+    <link rel="stylesheet" href="colors.css">
+    <script src="colors.js" defer></script>
+</head>
+<body>
+    <h1>The Great Color Factory</h1>
+
+    <!--Top of the page-->
+    <div class="container">
+
+        <!--Left side, where the grid of the generated colors is-->
+        <div class="left">
+
+            <div class="grid">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+
+            <button id="generate">Generate Colors!</button>
+        </div>
+
+        <!--Right side, color preview box -->
+        <div class="right">
+            <div class="area">
+                <div id="preview-area"></div>
+
+                <div class="slider">
+                    <div class="slider-group">
+                        <label id="red-label">Red</label>
+                        <input type="range" min="0" max="255" value="0" id="red">
+                    </div>
+                    <div class="slider-group">
+                        <label id="green-label">Green</label>
+                        <input type="range" min="0" max="255" value="0" id="green">
+                    </div>
+                    <div class="slider-group">
+                        <label id="blue-label">Blue</label>
+                        <input type="range" min="0" max="255" value="0" id="blue">
+                    </div>
+                </div>
+            </div>
+            <button id="save-color">Save Color!</button>
+        </div>
+    </div>
+    <!--Table with value and color-->
+    <table>
+        <thead>
+            <tr>
+                <th>Value</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody id="color-table"></tbody>
+    </table>
+</body>
+</html>

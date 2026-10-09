@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+}
+h1 {
+   background-color: gray; 
+   color:white;
+   text-align: center;
+   padding:30px;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    margin: 30px;
+}
+.grid {
+    background-color: lightgray;
+    padding: 30px;
+    border: 1px solid black
+}
+.area{
+    display:flex;
+    gap:25px;
+    align-items:center;
+    background-color: lightgray;
+    padding: 20px;
+    border: 1px solid black
+}
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 15px;
+}
+
+.right, .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    margin: 10px;
+}
+#preview-area {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin-bottom: 15 px;
+    border: 1px solid black;
+   
+}
+.slider{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+table {
+    margin-top: 40px ;
+    margin-left:auto;
+    margin-right: auto;
+    border-collapse:collapse;
+    width: 400px;
+}
+
+td {
+    padding:10px 20px;
+    border: 1px solid black;
+}
+
+th {
+    padding:10px 20px;
+    border: 1px solid black;
+    background-color: lightgray;
+    font-weight: bold;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color:white;
+}
+tbody tr:nth-child(even) {
+    background-color:#f2f1e8;
+}
